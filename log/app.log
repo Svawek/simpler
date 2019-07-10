@@ -1,177 +1,30 @@
-I, [2019-07-09T23:10:22.271826 #6766]  INFO -- : Request: GET /tests/98
-I, [2019-07-09T23:10:22.273688 #6766]  INFO -- : Handler: TestsControllershow
-I, [2019-07-09T23:10:22.273860 #6766]  INFO -- : Parameters: {:id=>98}
-I, [2019-07-09T23:10:22.273959 #6766]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-09T23:11:02.588840 #6766]  INFO -- : Request: GET /tests
-I, [2019-07-09T23:11:02.589036 #6766]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-09T23:11:02.589147 #6766]  INFO -- : Parameters: {:id=>nil}
-I, [2019-07-09T23:11:02.589223 #6766]  INFO -- : Response: 200 text/html tests/index.html.erb
-I, [2019-07-09T23:19:49.023042 #7012]  INFO -- : Request: GET /test
-I, [2019-07-09T23:21:03.905219 #7059]  INFO -- : Request: GET /test
-I, [2019-07-09T23:21:03.905404 #7059]  INFO -- : Handler: No
-I, [2019-07-09T23:22:57.551177 #7126]  INFO -- : Request: GET /test
-I, [2019-07-09T23:22:57.552246 #7126]  INFO -- : Handler: No
-I, [2019-07-09T23:28:19.926266 #7264]  INFO -- : Request: GET /test
-I, [2019-07-09T23:28:19.926445 #7264]  INFO -- : Handler: No
-I, [2019-07-09T23:28:19.926551 #7264]  INFO -- : Parameters: No
-I, [2019-07-09T23:28:19.926623 #7264]  INFO -- : Response: No
-I, [2019-07-09T23:29:51.630121 #7321]  INFO -- : Request: GET /test
-I, [2019-07-09T23:29:51.630375 #7321]  INFO -- : Handler: No
-I, [2019-07-09T23:29:51.630455 #7321]  INFO -- : Parameters: No
-I, [2019-07-09T23:29:51.630570 #7321]  INFO -- : Response: No
-I, [2019-07-09T23:40:46.843330 #7497]  INFO -- : Request: GET /tests
-I, [2019-07-09T23:40:46.848401 #7497]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-09T23:40:46.848553 #7497]  INFO -- : Parameters: {:id=>nil}
-I, [2019-07-09T23:40:46.848644 #7497]  INFO -- : Response: 200 text/html tests/index.html.erb
-I, [2019-07-09T23:40:57.045036 #7497]  INFO -- : Request: GET /tests/23
-I, [2019-07-09T23:40:57.045228 #7497]  INFO -- : Handler: TestsControllershow
-I, [2019-07-09T23:40:57.045316 #7497]  INFO -- : Parameters: {:id=>23}
-I, [2019-07-09T23:40:57.045413 #7497]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-09T23:41:02.168944 #7497]  INFO -- : Request: GET /tests/23sd
-I, [2019-07-09T23:41:02.169102 #7497]  INFO -- : Handler: No
-I, [2019-07-09T23:41:02.169164 #7497]  INFO -- : Parameters: No
-I, [2019-07-09T23:41:02.169226 #7497]  INFO -- : Response: No
-I, [2019-07-10T16:37:57.530894 #6866]  INFO -- : Request: GET /favicon.ico
-I, [2019-07-10T16:37:57.531008 #6866]  INFO -- : Handler: No
-I, [2019-07-10T16:37:57.531043 #6866]  INFO -- : Parameters: No
-I, [2019-07-10T16:37:57.531074 #6866]  INFO -- : Response: No
-I, [2019-07-10T16:38:49.913117 #6964]  INFO -- : Request: GET /tests
-I, [2019-07-10T16:38:49.913254 #6964]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T16:38:49.913353 #6964]  INFO -- : Parameters: {:id=>nil}
-I, [2019-07-10T16:38:49.913393 #6964]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T16:40:38.521639 #7060]  INFO -- : Request: GET /tests
-I, [2019-07-10T16:40:38.521872 #7060]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T16:40:38.521961 #7060]  INFO -- : Parameters: {:id=>nil}
-I, [2019-07-10T16:40:38.522023 #7060]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T16:40:39.658273 #7060]  INFO -- : Request: GET /tests
-I, [2019-07-10T16:40:39.658450 #7060]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T16:40:39.658531 #7060]  INFO -- : Parameters: {:id=>nil}
-I, [2019-07-10T16:40:39.658617 #7060]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T17:56:51.454209 #8731]  INFO -- : Request: GET /tests
-I, [2019-07-10T17:56:51.457595 #8731]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T17:56:51.461048 #8731]  INFO -- : Parameters: {:id=>nil}
-I, [2019-07-10T17:56:51.461216 #8731]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T18:37:46.928952 #9928]  INFO -- : Request: GET /tests/1
-I, [2019-07-10T18:37:46.930171 #9928]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:37:46.930731 #9928]  INFO -- : Parameters: {":id"=>"1"}
-I, [2019-07-10T18:37:46.931239 #9928]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:37:49.429074 #9928]  INFO -- : Request: GET /tests/1
-I, [2019-07-10T18:37:49.429959 #9928]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:37:49.430259 #9928]  INFO -- : Parameters: {":id"=>"1"}
-I, [2019-07-10T18:37:49.430390 #9928]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:44:33.269166 #9974]  INFO -- : Request: GET /tests/1
-I, [2019-07-10T18:44:33.269383 #9974]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:44:33.269474 #9974]  INFO -- : Parameters: {":id"=>"1"}
-I, [2019-07-10T18:44:33.269621 #9974]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:44:39.052108 #10071]  INFO -- : Request: GET /tests/1
-I, [2019-07-10T18:44:39.052215 #10071]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:44:39.052256 #10071]  INFO -- : Parameters: {:id=>"1"}
-I, [2019-07-10T18:44:39.052320 #10071]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:44:41.978341 #10071]  INFO -- : Request: GET /tests/123
-I, [2019-07-10T18:44:41.981255 #10071]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:44:41.981424 #10071]  INFO -- : Parameters: {:id=>"123"}
-I, [2019-07-10T18:44:41.981501 #10071]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:44:45.738747 #10071]  INFO -- : Request: GET /tests/zscf
-I, [2019-07-10T18:44:45.738901 #10071]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:44:45.739022 #10071]  INFO -- : Parameters: {:id=>"zscf"}
-I, [2019-07-10T18:44:45.739092 #10071]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:46:38.898316 #10189]  INFO -- : Request: GET /tests/zscf
-I, [2019-07-10T18:46:38.898463 #10189]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:46:38.898554 #10189]  INFO -- : Parameters: {:id=>"zscf"}
-I, [2019-07-10T18:46:38.898600 #10189]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:46:39.920587 #10189]  INFO -- : Request: GET /tests/zscf
-I, [2019-07-10T18:46:39.920684 #10189]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:46:39.920722 #10189]  INFO -- : Parameters: {:id=>"zscf"}
-I, [2019-07-10T18:46:39.920755 #10189]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:46:41.488516 #10189]  INFO -- : Request: GET /tests/zscf
-I, [2019-07-10T18:46:41.488758 #10189]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:46:41.488845 #10189]  INFO -- : Parameters: {:id=>"zscf"}
-I, [2019-07-10T18:46:41.488916 #10189]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:46:45.909108 #10189]  INFO -- : Request: GET /tests/123
-I, [2019-07-10T18:46:45.914107 #10189]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:46:45.914346 #10189]  INFO -- : Parameters: {:id=>"123"}
-I, [2019-07-10T18:46:45.914431 #10189]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:46:48.497152 #10189]  INFO -- : Request: GET /tests/123/
-I, [2019-07-10T18:46:48.497255 #10189]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:46:48.497363 #10189]  INFO -- : Parameters: {:id=>"123"}
-I, [2019-07-10T18:46:48.497404 #10189]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:47:07.377359 #10189]  INFO -- : Request: GET /tests/123/5
-I, [2019-07-10T18:47:07.377622 #10189]  INFO -- : Handler: No
-I, [2019-07-10T18:47:07.377695 #10189]  INFO -- : Parameters: No
-I, [2019-07-10T18:47:07.377754 #10189]  INFO -- : Response: No
-I, [2019-07-10T18:47:10.604251 #10189]  INFO -- : Request: GET /test
-I, [2019-07-10T18:47:10.604359 #10189]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T18:47:10.604420 #10189]  INFO -- : Parameters: {}
-I, [2019-07-10T18:47:10.604459 #10189]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T18:47:13.548005 #10189]  INFO -- : Request: GET /test
-I, [2019-07-10T18:47:13.553078 #10189]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T18:47:13.553337 #10189]  INFO -- : Parameters: {}
-I, [2019-07-10T18:47:13.553439 #10189]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T18:47:17.680850 #10189]  INFO -- : Request: GET /tests
-I, [2019-07-10T18:47:17.682419 #10189]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T18:47:17.683809 #10189]  INFO -- : Parameters: {}
-I, [2019-07-10T18:47:17.683911 #10189]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T18:48:28.537655 #10189]  INFO -- : Request: GET /test
-I, [2019-07-10T18:48:28.537761 #10189]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T18:48:28.537828 #10189]  INFO -- : Parameters: {}
-I, [2019-07-10T18:48:28.537864 #10189]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T18:48:31.141889 #10189]  INFO -- : Request: GET /tests
-I, [2019-07-10T18:48:31.141999 #10189]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T18:48:31.142053 #10189]  INFO -- : Parameters: {}
-I, [2019-07-10T18:48:31.142089 #10189]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T18:51:53.494659 #10481]  INFO -- : Request: GET /test
-I, [2019-07-10T18:51:53.494884 #10481]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T18:51:53.495077 #10481]  INFO -- : Parameters: {}
-I, [2019-07-10T18:51:53.495170 #10481]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T18:55:57.553190 #10545]  INFO -- : Request: GET /test
-I, [2019-07-10T18:55:57.557893 #10545]  INFO -- : Handler: No
-I, [2019-07-10T18:55:57.559846 #10545]  INFO -- : Parameters: No
-I, [2019-07-10T18:55:57.560021 #10545]  INFO -- : Response: No
-I, [2019-07-10T18:57:40.154137 #10602]  INFO -- : Request: GET /test
-I, [2019-07-10T18:57:40.157123 #10602]  INFO -- : Handler: No
-I, [2019-07-10T18:57:40.157846 #10602]  INFO -- : Parameters: No
-I, [2019-07-10T18:57:40.158119 #10602]  INFO -- : Response: No
-I, [2019-07-10T18:57:45.401280 #10666]  INFO -- : Request: GET /test
-I, [2019-07-10T18:57:45.401494 #10666]  INFO -- : Handler: No
-I, [2019-07-10T18:57:45.402275 #10666]  INFO -- : Parameters: No
-I, [2019-07-10T18:57:45.402438 #10666]  INFO -- : Response: No
-I, [2019-07-10T18:57:47.785819 #10666]  INFO -- : Request: GET /tests
-I, [2019-07-10T18:57:47.785959 #10666]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T18:57:47.786030 #10666]  INFO -- : Parameters: {}
-I, [2019-07-10T18:57:47.786069 #10666]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T18:57:51.630155 #10666]  INFO -- : Request: GET /test
-I, [2019-07-10T18:57:51.630281 #10666]  INFO -- : Handler: No
-I, [2019-07-10T18:57:51.630355 #10666]  INFO -- : Parameters: No
-I, [2019-07-10T18:57:51.630411 #10666]  INFO -- : Response: No
-I, [2019-07-10T18:57:55.761654 #10666]  INFO -- : Request: GET /tests1
-I, [2019-07-10T18:57:55.761798 #10666]  INFO -- : Handler: No
-I, [2019-07-10T18:57:55.761836 #10666]  INFO -- : Parameters: No
-I, [2019-07-10T18:57:55.761935 #10666]  INFO -- : Response: No
-I, [2019-07-10T18:57:58.055314 #10666]  INFO -- : Request: GET /tests
-I, [2019-07-10T18:57:58.055420 #10666]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T18:57:58.055473 #10666]  INFO -- : Parameters: {}
-I, [2019-07-10T18:57:58.055510 #10666]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T18:58:06.011085 #10666]  INFO -- : Request: GET /tests/1
-I, [2019-07-10T18:58:06.013834 #10666]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:58:06.013995 #10666]  INFO -- : Parameters: {:id=>"1"}
-I, [2019-07-10T18:58:06.014079 #10666]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:58:09.355455 #10666]  INFO -- : Request: GET /tests/1/
-I, [2019-07-10T18:58:09.355556 #10666]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:58:09.355639 #10666]  INFO -- : Parameters: {:id=>"1"}
-I, [2019-07-10T18:58:09.355685 #10666]  INFO -- : Response: 200 text/html tests/show.html.erb
-I, [2019-07-10T18:58:12.288244 #10666]  INFO -- : Request: GET /tests/1/ds
-I, [2019-07-10T18:58:12.288361 #10666]  INFO -- : Handler: No
-I, [2019-07-10T18:58:12.288398 #10666]  INFO -- : Parameters: No
-I, [2019-07-10T18:58:12.288430 #10666]  INFO -- : Response: No
-I, [2019-07-10T18:58:34.963326 #10727]  INFO -- : Request: GET /tests
-I, [2019-07-10T18:58:34.965699 #10727]  INFO -- : Handler: TestsControllerindex
-I, [2019-07-10T18:58:34.967565 #10727]  INFO -- : Parameters: {}
-I, [2019-07-10T18:58:34.968944 #10727]  INFO -- : Response: 200 text/plain 
-I, [2019-07-10T18:58:38.085441 #10727]  INFO -- : Request: GET /test
-I, [2019-07-10T18:58:38.085540 #10727]  INFO -- : Handler: No
-I, [2019-07-10T18:58:38.085614 #10727]  INFO -- : Parameters: No
-I, [2019-07-10T18:58:38.085645 #10727]  INFO -- : Response: No
-I, [2019-07-10T18:58:42.811351 #10727]  INFO -- : Request: GET /tests/df
-I, [2019-07-10T18:58:42.811477 #10727]  INFO -- : Handler: TestsControllershow
-I, [2019-07-10T18:58:42.811540 #10727]  INFO -- : Parameters: {:id=>"df"}
-I, [2019-07-10T18:58:42.811595 #10727]  INFO -- : Response: 200 text/html tests/show.html.erb
+I, [2019-07-10T23:30:07.504401 #6527]  INFO -- : "Request: GET /tests/jk"
+"Parameters: {:id=>"jk"}"
+handler_info(controller, info)
+response_info(response, env["simpler.template"], controller, action)
+
+I, [2019-07-10T23:32:08.924332 #6620]  INFO -- : "Request: GET /tests/jk"
+"Parameters: {:id=>"jk"}"
+Handler: TestsController#show
+Response: 200 text/html tests/show.html.erb
+
+I, [2019-07-10T23:34:17.892433 #6662]  INFO -- : Request: GET /tests/jk"
+Parameters: {:id=>"jk"}"
+Handler: TestsController#show
+Response: 200 text/html tests/show.html.erb
+
+I, [2019-07-10T23:34:47.558458 #6693]  INFO -- : Request: GET /tests/jk"
+Parameters: {:id=>"jk"}"
+Handler: TestsController#show
+Response: 200 text/html tests/show.html.erb
+
+I, [2019-07-10T23:35:04.090113 #6693]  INFO -- : Request: GET /tests/jk"
+Parameters: {:id=>"jk"}"
+Handler: TestsController#show
+Response: 200 text/html tests/show.html.erb
+
+I, [2019-07-10T23:35:51.445506 #6693]  INFO -- : Request: GET /tests"
+Parameters: {}"
+Handler: TestsController#index
+Response: 200 text/plain 
+
