@@ -24,6 +24,7 @@ module Simpler
     end
 
     private
+    attr_writer :request
 
     def extract_name
       self.class.name.match('(?<name>.+)Controller')[:name].downcase
@@ -34,39 +35,25 @@ module Simpler
     end
 
     def write_response
-      if @response.body.empty?
-        body = render_body
+      body = render_body
 
-        @response.write(body)
-      end
+      @response.write(body)
     end
 
     def render_body
       View.new(@request.env).render(binding)
     end
 
-    def params(id)
-      @request.params[id]
+    def params
+      @request.params
     end
 
     def render(template)
       if template.class == Hash
-        body = View.new(@request.env).render(binding, render_text(template))
-        @response.write(body)
         @response['Content-Type'] = 'text/plain'
-      else
-        @request.env['simpler.template'] = template
+        @request.env['simpler.template_type'] = 'hash'
       end
-    end
-
-    def render_text(hash)
-      text = ''
-      hash.each do |k,v|
-        if k == :plain || :inline
-          text << v
-        end
-      end
-      text
+      @request.env['simpler.template'] = template
     end
 
     def status(code)
@@ -74,7 +61,9 @@ module Simpler
     end
 
     def set_params
-      @request.params[:id] = @request.env["simpler.params"]
+      @request.env["simpler.route_params"].each do |k,v|
+        @request.params[k] = v
+      end
     end
 
   end

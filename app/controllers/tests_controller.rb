@@ -1,6 +1,7 @@
 class TestsController < Simpler::Controller
 
   def index
+    render plain: "Hello :)"
   end
 
   def create
@@ -8,7 +9,7 @@ class TestsController < Simpler::Controller
   end
 
   def show
-    @param = params(:id)
+    @test_id = params[:id]
   end
 
 end

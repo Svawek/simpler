@@ -17,7 +17,7 @@ module Simpler
 
     def route_for(env)
       method = env['REQUEST_METHOD'].downcase.to_sym
-      path = path_formation(env)
+      path = env['PATH_INFO']
 
       @routes.find { |route| route.match?(method, path) }
     end
@@ -35,22 +35,6 @@ module Simpler
 
     def controller_from_string(controller_name)
       Object.const_get("#{controller_name.capitalize}Controller")
-    end
-
-    def path_formation(env)
-      path_info = env['PATH_INFO']
-      if path_info.count("/") > 1
-        path_array = path_info.delete_prefix("/").split("/")
-        if path_array[1] =~ /\A\d+\z/
-          params = path_array[1].to_i
-          env["simpler.params"] = params
-          "/#{path_array[0]}/:id"
-        else
-          path_info
-        end
-      else
-        path_info
-      end
     end
 
   end

@@ -9,8 +9,12 @@ module Simpler
       @env = env
     end
 
-    def render(binding, template = nil)
-      template = File.read(template_path) if template == nil
+    def render(binding)
+      if template_type == 'hash'
+        template = create_template
+      else
+        template = File.read(template_path)
+      end
 
       ERB.new(template).result(binding)
     end
@@ -29,10 +33,26 @@ module Simpler
       @env['simpler.template']
     end
 
+    def template_type
+      @env['simpler.template_type']
+    end
+  
+
     def template_path
       path = template || [controller.name, action].join('/')
 
       Simpler.root.join(VIEW_BASE_PATH, "#{path}.html.erb")
+    end
+
+    def create_template
+      hash = template
+      text = ''
+      hash.each do |k,v|
+        if k == :plain || :inline
+          text << v
+        end
+      end
+      text
     end
 
   end
