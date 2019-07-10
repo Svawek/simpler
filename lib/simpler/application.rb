@@ -28,7 +28,7 @@ module Simpler
 
     def call(env)
       route = @router.route_for(env)
-      return no_page if route == nil
+      return no_page if route.nil?
       controller = route.controller.new(env)
       action = route.action
 
