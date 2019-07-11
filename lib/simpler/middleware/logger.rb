@@ -26,26 +26,17 @@ module Simpler
   
     def add_log(env)
       controller = env["simpler.controller"]
-      response = if controller.nil?
-                  nil
-                 else
-                  controller.response
-                 end
       action = env["simpler.action"]
       str = ''
       str = <<~LOG
-        Request: #{env["REQUEST_METHOD"]} #{env["PATH_INFO"]}"
-        Parameters: #{controller.request.params}"
+        Request: #{env["REQUEST_METHOD"]} #{env["PATH_INFO"]}
+        Parameters: #{controller.nil? ? 'No' : controller.request.params}
         #{handler_info(controller, action)}
-        #{response_info(response, env["simpler.template"], controller, action)}
+        #{response_info(env["simpler.template"], controller, action)}
       LOG
         
       @log.info str
     end
-
-    # def str
-    #   @log
-    # end
 
     def handler_info(controller, action)
       if controller.nil?
@@ -55,16 +46,15 @@ module Simpler
       end
     end
 
-    def response_info(response, template, controller, action)
-        status = @status
-        header = @headers['Content-Type']
-        path = if template == nil
-                "#{controller.name}/#{action}.html.erb"
-              else
-                ''
-              end
-        "Response: #{status} #{header} #{path}"
-      # end
+    def response_info(template, controller, action)
+      status = @status
+      header = @headers['Content-Type']
+      path = if template.nil? && !controller.nil?
+              "#{controller.name}/#{action}.html.erb"
+            else
+              ''
+            end
+      "Response: #{status} #{header} #{path}"
     end
   
   end
