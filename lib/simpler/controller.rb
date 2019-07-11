@@ -9,6 +9,7 @@ module Simpler
       @name = extract_name
       @request = Rack::Request.new(env)
       @response = Rack::Response.new
+      set_params
     end
 
     def make_response(action)
@@ -16,6 +17,7 @@ module Simpler
       @request.env['simpler.action'] = action
 
       set_default_headers
+      set_default_template_type
       send(action)
       write_response
 
@@ -23,6 +25,7 @@ module Simpler
     end
 
     private
+    attr_writer :request
 
     def extract_name
       self.class.name.match('(?<name>.+)Controller')[:name].downcase
@@ -30,6 +33,10 @@ module Simpler
 
     def set_default_headers
       @response['Content-Type'] = 'text/html'
+    end
+
+    def set_default_template_type
+      @request.env['simpler.template_type'] = :html
     end
 
     def write_response
@@ -47,7 +54,25 @@ module Simpler
     end
 
     def render(template)
+      if template.class == Hash
+        @response['Content-Type'] = 'text/plain'
+        @request.env['simpler.template_type'] = template.keys[0]
+      end
       @request.env['simpler.template'] = template
+    end
+
+    def status(code)
+      @response.status = code
+    end
+
+    def header(name)
+      @response['Content-Type'] = name
+    end
+
+    def set_params
+      @request.env["simpler.route_params"].each do |k,v|
+        @request.params[k] = v
+      end
     end
 
   end
