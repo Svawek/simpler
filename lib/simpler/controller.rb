@@ -60,6 +60,10 @@ module Simpler
       @response.status = code
     end
 
+    def header(name)
+      @response['Content-Type'] = name
+    end
+
     def set_params
       @request.env["simpler.route_params"].each do |k,v|
         @request.params[k] = v
